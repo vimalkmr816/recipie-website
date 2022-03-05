@@ -22,6 +22,7 @@ function App() {
 	return (
 		<div className="App">
 			<Header />
+			<MainCarousel img={recipies.hits} />
 			{recipies.hits && <RecipieSection recipies={recipies.hits} />}
 			<Footer />
 		</div>
