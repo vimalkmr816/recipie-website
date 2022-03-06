@@ -2,11 +2,11 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 function MainCarousel({ img }) {
 	return (
-		<Carousel className="w-25">
+		<Carousel className="w-50">
 			<Carousel.Item>
 				<img
 					className="d-block w-100"
-					src="https://www.edamam.com/web-img/ccc/cccff7df44dd1afa256d874c04a0882c.jpg"
+					src="F:\Practice\React Projects\recipie-website\images\767042.jpg"
 					alt="First slide"
 				/>
 				<Carousel.Caption>
