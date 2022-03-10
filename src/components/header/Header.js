@@ -1,50 +1,24 @@
 import React from "react";
 import { Navbar, Container, NavDropdown, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import BottomHeader from "./BottomHeader";
 function Header() {
 	return (
-		<Navbar bg="light" expand="lg">
-			<Container>
-				<Navbar.Brand>
-					<Link to="/">React-Bootstrap</Link>
-				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className="me-auto ">
-						<Nav.Link>
-							<Link to="/login-form" className="text-dark text-decoration-none">
-								Login
-							</Link>
-						</Nav.Link>
-						<Nav.Link>
-							<Link
-								to="/recipe-page"
-								className="text-dark text-decoration-none">
-								Pages
-							</Link>
-						</Nav.Link>
-						<Nav.Link>
-							<Link
-								to="/contact-form"
-								className="text-dark text-decoration-none">
-								Contact
-							</Link>
-						</Nav.Link>
-						<NavDropdown title="Browse Recipies" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">
-								Another action
-							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">
-								Separated link
-							</NavDropdown.Item>
-						</NavDropdown>
-					</Nav>
-				</Navbar.Collapse>
-			</Container>
-		</Navbar>
+		<div>
+		    <Navbar bg="light" expand="lg" className="navbar">
+    			<ul className="nav-list list-unstyled d-flex gap-5 mx-auto align-item-center">
+    				<li className="list-items">
+                        <Link to='/' className="text-decoration-none text-dark">Home</Link>
+                    </li>
+    				<li className="list-items">Submit Recipes</li>
+    				<li className="list-items">Pages</li>
+    				<li className="list-items">News</li>
+    				<li className="list-items"><Link to='/login-form'className="text-decoration-none text-dark">Login</Link></li>
+    				<li className="list-items"><Link to='/contact-form' className="text-decoration-none text-dark">Contact</Link></li>
+    			</ul>
+    		</Navbar>
+            <BottomHeader></BottomHeader>
+		</div>
 	);
 }
 

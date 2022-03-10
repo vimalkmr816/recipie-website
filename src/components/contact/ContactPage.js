@@ -1,10 +1,10 @@
 import React from "react";
-import Map from "./Map";
+import AddressMap from "./AddressMap";
 import ContactForm from "./ContactForm";
 function ContactPage() {
 	return (
 		<div>
-			<Map></Map>
+			<AddressMap></AddressMap>
 			<ContactForm></ContactForm>
 		</div>
 	);

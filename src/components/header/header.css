@@ -1,0 +1,8 @@
+.bottom-header{
+    background: #282c34;
+    min-height: 300px;
+    opacity: 75%;
+}
+.navbar{
+    padding: 2rem;
+}
